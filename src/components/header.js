@@ -1,6 +1,6 @@
 import React from "react"
-import { Link } from "gatsby"
 import { FaAlignRight } from "react-icons/fa"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 import styles from "../css/navbar.module.css"
 import socialIcons from "../constants/social-icons"
@@ -31,7 +31,9 @@ const Header = () => {
         >
           {links.map((item, index) => (
             <li key={index}>
-              <Link to={item.path}>{item.text}</Link>
+              <AniLink fade to={item.path}>
+                {item.text}
+              </AniLink>
             </li>
           ))}
         </ul>

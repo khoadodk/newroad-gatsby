@@ -18,6 +18,7 @@ export default styled(Hero)`
       : "none"};
   min-height: ${props => (props.home ? "calc(100vh - 62px)" : "50vh")};
   background-size: cover;
+  /* somehow default opacity is 0.99. */
   opacity: 1 !important;
   display: flex;
   justify-content: center;

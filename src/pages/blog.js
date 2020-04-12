@@ -6,7 +6,7 @@ import Hero from "../components/Hero"
 
 export const query = graphql`
   {
-    defaultBcg: file(relativePath: { eq: "defaultBcg.jpeg" }) {
+    blogBcg: file(relativePath: { eq: "blogBcg.jpeg" }) {
       childImageSharp {
         fluid(quality: 90, maxWidth: 4160) {
           ...GatsbyImageSharpFluid_withWebp
@@ -16,8 +16,8 @@ export const query = graphql`
   }
 `
 
-const ToursPage = ({ data }) => {
-  const { fluid } = data.defaultBcg.childImageSharp
+const BlogPage = ({ data }) => {
+  const { fluid } = data.blogBcg.childImageSharp
   return (
     <Layout>
       <Hero img={fluid}></Hero>
@@ -25,4 +25,4 @@ const ToursPage = ({ data }) => {
   )
 }
 
-export default ToursPage
+export default BlogPage
