@@ -12,7 +12,6 @@
   transition: var(--mainTransition);
 }
 .img {
-  height: 40vh;
   transition: var(--mainTransition);
 }
 .img-container:hover .img {

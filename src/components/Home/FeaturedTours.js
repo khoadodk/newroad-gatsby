@@ -17,10 +17,9 @@ const getFeatured = graphql`
           days
           price
           slug
-          start
           images {
             fluid {
-              src
+              ...GatsbyContentfulFluid_tracedSVG
             }
           }
         }
