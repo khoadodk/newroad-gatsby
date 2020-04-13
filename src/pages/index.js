@@ -6,6 +6,7 @@ import Hero from "../components/Hero"
 import Banner from "../components/Banner"
 import About from "../components/Home/About"
 import Services from "../components/Home/Services"
+import FeaturedTours from "../components/Home/FeaturedTours"
 
 export const query = graphql`
   {
@@ -35,6 +36,7 @@ const IndexPage = ({ data }) => {
       </Hero>
       <About />
       <Services />
+      <FeaturedTours />
     </Layout>
   )
 }

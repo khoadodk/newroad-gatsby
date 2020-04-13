@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import Hero from "../components/Hero"
+import Contact from "../components/Contact/Contact"
 
 export const query = graphql`
   {
@@ -21,6 +22,7 @@ const ContactPage = ({ data }) => {
   return (
     <Layout>
       <Hero img={fluid}></Hero>
+      <Contact />
     </Layout>
   )
 }
