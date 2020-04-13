@@ -5,15 +5,12 @@ import Tour from "./Tour"
 import Title from "../Title"
 
 const TourList = ({ tours }) => {
-  const INITIAL_STATE = tours
-  console.log(tours)
-  const [sortedTours, setSortedTours] = React.useState(INITIAL_STATE)
   return (
     <section className={styles.tours}>
       <Title title="our" subtitle="tours" />
       <div className={styles.center}>
-        {sortedTours.map(({ node }) => (
-          <Tour key={node.contenful_id} tour={node} />
+        {tours.map(({ node }, index) => (
+          <Tour key={index} tour={node} />
         ))}
       </div>
     </section>

@@ -19,7 +19,7 @@ const getFeatured = graphql`
           slug
           images {
             fluid {
-              ...GatsbyContentfulFluid_tracedSVG
+              ...GatsbyContentfulFluid
             }
           }
         }
@@ -35,8 +35,8 @@ const FeaturedTours = () => {
     <section className={styles.tours}>
       <Title title="Featured" subtitle="tours" />
       <div className={styles.center}>
-        {tours.map(({ node }) => (
-          <Tour key={node.contenful_id} tour={node} />
+        {tours.map(({ node }, index) => (
+          <Tour key={index} tour={node} />
         ))}
       </div>
       <AniLink fade to="/tours" className="btn-primary">

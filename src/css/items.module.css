@@ -10,14 +10,13 @@
   grid-column-gap: 2rem;
   grid-row-gap: 2rem;
 }
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 900px) {
   .center {
-    grid-template-columns: repeat(auto-fill, minmax(368.66px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   }
 }
 @media screen and (min-width: 1200px) {
   .center {
-    width: 100%;
-    max-width: 1170px;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   }
 }
