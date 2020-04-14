@@ -5,7 +5,7 @@ import Title from "../Title"
 
 const Contact = () => {
   return (
-    <section>
+    <section className={styles.contact}>
       <Title title="contact" subtitle="us" />
       <div className={styles.center}>
         <form
