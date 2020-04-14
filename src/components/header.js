@@ -5,7 +5,7 @@ import AniLink from "gatsby-plugin-transition-link/AniLink"
 import styles from "../css/navbar.module.css"
 import socialIcons from "../constants/social-icons"
 import links from "../constants/links"
-import logo from "../images/gatsby-icon.png"
+import logo from "../images/logo.png"
 
 const Header = () => {
   const [isOpen, setIsOpen] = React.useState(false)
