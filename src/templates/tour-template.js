@@ -38,7 +38,7 @@ export const query = graphql`
   }
 `
 
-const Template = ({ data }) => {
+const TourTemplate = ({ data }) => {
   const {
     name,
     price,
@@ -104,4 +104,4 @@ const Template = ({ data }) => {
   )
 }
 
-export default Template
+export default TourTemplate

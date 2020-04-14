@@ -5,13 +5,41 @@
   width: 80vw;
   margin: 0 auto;
 }
-.blog h1,
-.blog h4 {
+.blog-title {
+  text-transform: capitalize;
+  color: var(--primaryColor);
+}
+.blog p {
   text-transform: capitalize;
 }
 .post {
   margin: 2rem 0;
+  line-height: 2rem;
 }
+
 .post img {
   max-width: 70vw;
+}
+
+.post-image {
+  padding: 1rem 0;
+}
+
+.post-image h4 {
+  text-transform: capitalize;
+}
+
+.related-posts h4 {
+  text-transform: capitalize;
+}
+
+.link {
+  text-decoration: none;
+  display: block;
+  width: 100px;
+  color: var(--mainBlack);
+  cursor: pointer;
+}
+.link:hover {
+  color: var(--primaryColor);
 }
