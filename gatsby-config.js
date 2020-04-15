@@ -7,7 +7,7 @@ module.exports = {
     title: `New Road`,
     description: `Explore awesome worldwide tours & dicover what makes each of them unique`,
     author: `Khoa Do`,
-    twitterUsername: "@newroad",
+    twitterUsername: "@dkkhoado",
     image: "/tour-2.jpeg",
     siteUrl: "https://newroad.netlify.com",
   },
