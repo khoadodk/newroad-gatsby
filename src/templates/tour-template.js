@@ -13,6 +13,7 @@ import AniLink from "gatsby-plugin-transition-link/AniLink"
 import Layout from "../components/layout"
 import Hero from "../components/Hero"
 import Day from "../components/Day"
+import SEO from "../components/seo"
 
 export const query = graphql`
   query($slug: String!) {
@@ -56,6 +57,7 @@ const TourTemplate = ({ data }) => {
 
   return (
     <Layout>
+      <SEO title={name} />
       <Hero img={mainImage.fluid}></Hero>
       <section className={styles.template}>
         <div className={styles.center}>
