@@ -39,4 +39,23 @@ exports.createPages = async ({ graphql, actions }) => {
       },
     })
   })
+
+  //--------- Pagination ----------
+  const posts = data.posts.edges
+  const postsPerPage = 6
+  const numPages = Math.ceil(posts.length / postsPerPage)
+
+  // Generate the number of page index
+  Array.from({ length: numPages }).forEach((_, i) => {
+    createPage({
+      path: i === 0 ? "/posts" : `/posts/${i + 1}`,
+      component: path.resolve("./src/templates/post-list-template.js"),
+      context: {
+        limit: postsPerPage,
+        skip: i * postsPerPage,
+        numPages,
+        currentPage: i + 1,
+      },
+    })
+  })
 }
