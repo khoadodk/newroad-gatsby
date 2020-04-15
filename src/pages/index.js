@@ -7,6 +7,7 @@ import Banner from "../components/Banner"
 import About from "../components/Home/About"
 import Services from "../components/Home/Services"
 import FeaturedTours from "../components/Home/FeaturedTours"
+import SEO from "../components/seo"
 
 export const query = graphql`
   {
@@ -24,6 +25,7 @@ const IndexPage = ({ data }) => {
   const defaultBcg = data.defaultBcg.childImageSharp.fluid
   return (
     <Layout>
+      <SEO title="Home" />
       <Hero home="true" img={defaultBcg}>
         <Banner
           title="exciting tours"
